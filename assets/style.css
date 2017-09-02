@@ -1,0 +1,39 @@
+#portfolio {
+	width: 100%;
+	text-align: center;
+}
+.portcenter {
+	position: relative;
+	width: 300px;
+	margin: 20px;
+	display: inline-block;
+}
+.portcenter img {
+	width: 300px;
+}
+a p {
+	position: absolute;
+	bottom: 0px;
+	width: 100%;
+	color: white;
+	text-align: center;
+	background-color: #4aaaa5;
+	padding: 10px 0px;
+}
+h1, h2, h3, p {
+	font-family: 'Georgia', Times, 'Times New Roman', serif;
+}
+h2, h3 {
+	color: #4aaaa5;
+}
+.navbar-brand {
+	position: relative;
+	left: 135px;
+	background: #4aaaa5;
+	width: 150px;
+	text-align: center;
+}
+.navbar-header .navbar-brand {
+	color: white;
+	font-size: 25px;
+}

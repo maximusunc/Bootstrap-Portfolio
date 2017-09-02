@@ -3,56 +3,68 @@
 <head>
 	<title>Max's Bio</title>
 	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
-	<link href="sticky-footer.css" rel="stylesheet">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel='stylesheet' type='text/css' href='assets/style.css'>
 </head>
-<body>
+<body style='background-color: #dddddd; background-image: url("assets/images/rockywall.png");'>
 	
 	<nav class="navbar navbar-default">
-  	<div class="container-fluid">
-    <!-- Brand and toggle get grouped for better mobile display -->
 
-		<div class='row'>
+      <!-- Place Fluid Container in Navbar -->
+      <div class="container-fluid">
 
-			<div class='col-sm-6 col-xs-12 text-center'>
-      			<h1 class='text-center'>Max Wang</h1>
-    		</div>
+        <!-- Designate a navbar heading -->
+        <div class="navbar-header">
 
-    			<!-- Collect the nav links, forms, and other content for toggling -->
-		
-				<div class='col-sm-5 col-sm-offset-1 col-xs-12'>
-      				<ul class="nav navbar-nav" style='margin: 20px 0 0 15px;'>
-        				<li><a href="index.html">About <span class="sr-only">(current)</span></a></li>
-        				<li class='active'><a href="#">Portfolio</a></li>
-        				<li><a href="contact.html">Contact</a></li>
-      				</ul>
-    			</div>
-    	</div>
-  	</div><!-- /.container-fluid -->
-	</nav>
+          <!-- Collapsible button -->
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+
+              <span class="sr-only">Toggle navigation</span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+              <span class="icon-bar"></span>
+
+            </button>
+          <!-- Our brand / logo -->
+          <a class="navbar-brand" href="#">Max Wang</a>
+        </div>
+
+        <!-- The links of our navbar -->
+        <div id="navbar" class="navbar-collapse collapse" aria-expanded="false" style="height: 1px;">
+
+          <!-- More links -->
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">About <span class="sr-only">(current)</span></a></li>
+            <li class='active'><a href="portfolio.html">Portfolio</a></li>
+            <li><a href="contact.html">Contact</a></li>
+          </ul>
+        </div>
+        <!--/.nav-collapse -->
+      </div>
+      <!--/.container-fluid -->
+    </nav>
 
 	<div class='container' style='margin-bottom: 80px;'>
 
 	<div class='row'>
 		<div class='col-md-8 col-sm-12 well' style='background: #ffffff;'>
 			<h2 class='page-header'>Portfolio</h2>
-	<div class='row'>
-		<div class='col-md-6'>
-			<a href='#' class='thumbnail'><img src='assets/images/city.jpeg' alt='city'><span>City Planning</span></a>
+
+		<div id='portfolio'>
+		<div class='portcenter'>
+			<a href='#'><img src='assets/images/city.jpeg' alt='city'><p>City Planning</p></a>
 		</div>
-		<div class='col-md-6'>
-			<a href='#' class='thumbnail'><img src='assets/images/woman.jpeg' alt='Woman'><span>Graphic Design</span></a>
+		<div class='portcenter'>
+			<a href='#'><img src='assets/images/woman.jpeg' alt='Woman'><p>Graphic Design</p></a>
 		</div>
-	</div>
-	<div class='row'>
-		<div class='col-md-6'>
-			<a href='#' class='thumbnail'><img src='assets/images/night.jpeg' alt='Nighttime City'><span>Knight L1fe</span></a>
+		<div class='portcenter'>
+			<a href='#'><img src='assets/images/night.jpeg' alt='Nighttime City'><p>Knight L1fe</p></a>
 		</div>
-		<div class='col-md-6'>
-			<a href='#' class='thumbnail'><img src='assets/images/running.jpeg' alt='Running'><span>Running Logistics</span></a>
+		<div class='portcenter'>
+			<a href='#'><img src='assets/images/running.jpeg' alt='Running'><p>Running Logistics</p></a>
 		</div>
-	</div>
-	</div>
+		</div>
+		</div>
 
 		<div class='col-md-3 col-md-offset-1 col-sm-12 well' style='background: #ffffff;'>
 			<h3 class='page-header'>Connect with Me</h3>
@@ -64,11 +76,15 @@
 
 	</div>
 
-	<footer class="footer navbar-fixed-bottom" style='background: #666666; padding: 20px; border-top: 3px solid #4aaaa5; color: #9ea4a8;'>
+	<footer class="footer navbar-fixed-bottom" style='background: #666666; padding: 20px; border-top: 7px solid #4aaaa5; color: #9ea4a8;'>
    		<div class="container-fluid">
    			<p class='text-center my-3'>&copy; Copyright 2017 Max Wang</p>
    		</div>
 	</footer>
+
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js" integrity="sha384-Tc5IQib027qvyjSMfHjOMaLkfuWVxZxUPnCJA7l2mCWNIpG9mGCD8wGNIcPD7Txa" crossorigin="anonymous"></script>
 
 </body>
 </html>
